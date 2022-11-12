@@ -29,8 +29,8 @@ def c(text):
     return 'C %s' % text.replace('_', ' ')
 
 
-@app.route('/c/', defaults={'text': 'is cool'})
-@app.route('/c/(<text>)', strict_slashes=False)
+@app.route('/python/', defaults={'text': 'is cool'})
+@app.route('/python/<text>', strict_slashes=False)
 def p(text):
     """Returns string to /c/text"""
     return 'Python %s' % text.replace('_', ' ')
