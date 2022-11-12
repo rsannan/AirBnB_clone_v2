@@ -16,7 +16,7 @@ def hello_world():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hello_world():
+def hbnb():
     """Returns string to /hbnb"""
     return 'HBNB'
 
